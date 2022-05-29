@@ -1,46 +1,13 @@
-# Getting Started with Create React App
+yarn - install packages;
+yarn start - start project;
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In process of development I used typescript, material ui, firebase, redux-toolkit, i18-next, responsive layout, sass, normalize.css.
 
-## Available Scripts
+First of all, I got data from https://docs.github.com/en/rest/users/users#list-users downloaded 30 users json and push to firebase with help of Refi app.
 
-In the project directory, you can run:
+On the main page we have user list with pagination. Because database has only 30 users. I get them all. If will be much more. I will get totalcount to get page count for pagination and send get api request with limit and offset.
 
-### `npm start`
+When we clicked on UserCard we will get to profile page with user description. Also we can click arrow back to return user List.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+On Header we have link to community page. It is consists of 2 list with virtual scroll. On the left side list of users beyond the community list. And on the right sight list of users in community list. Also had a responsive layout.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
