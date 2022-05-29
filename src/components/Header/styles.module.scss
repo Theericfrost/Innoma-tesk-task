@@ -1,0 +1,29 @@
+@import "../../assets/css/colors.scss";
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.toolbar {
+  background: var(--blue);
+  color: white;
+  padding: 0 24px;
+}
+
+.link {
+  margin-right: 12px;
+}
+
+.icon {
+  color: white;
+}
+
+.community {
+  margin-left: auto;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

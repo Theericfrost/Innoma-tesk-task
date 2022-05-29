@@ -1,0 +1,25 @@
+.card {
+  cursor: pointer;
+  width: 100%;
+}
+
+.virtualMode {
+  &#{&} {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.cardInner {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.login {
+  margin-left: 12px;
+}
+
+.checkbox {
+  margin-left: auto;
+}

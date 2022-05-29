@@ -1,0 +1,7 @@
+@mixin mobile768() {
+  @media (max-width: 767px) {
+    .usersContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+}

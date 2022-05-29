@@ -1,0 +1,36 @@
+@import "./mobile/index.module.scss";
+
+:root {
+  --avatarWidth: 200px;
+  --avatarHeight: 200px;
+}
+
+.profile {
+  display: flex;
+}
+
+.avatarContainer {
+  padding: 16px;
+  width: 100%;
+  max-width: var(--avatarWidth);
+  img {
+    max-width: var(--avatarWidth);
+    max-height: var(--avatarHeight);
+  }
+}
+
+.infoContainer {
+  margin-left: 16px;
+  padding: 16px;
+  width: 100%;
+}
+
+.login {
+  font-size: 19px;
+}
+
+@include laptop();
+@include tablet();
+@include mobile768();
+@include mobile640();
+@include mobile480();

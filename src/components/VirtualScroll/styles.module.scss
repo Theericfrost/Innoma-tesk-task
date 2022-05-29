@@ -1,0 +1,10 @@
+.virtualScroll {
+  overflow-y: scroll;
+  list-style-type: none;
+}
+
+.userCardContainer:not(:last-child) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

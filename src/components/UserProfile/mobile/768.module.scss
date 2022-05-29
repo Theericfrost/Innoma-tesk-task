@@ -1,0 +1,18 @@
+@mixin mobile768() {
+  @media (max-width: 767px) {
+    .profile {
+      flex-direction: column;
+    }
+    .infoContainer {
+      margin-left: 0;
+      margin-top: 12px;
+      width: inherit;
+    }
+    .avatarContainer {
+      max-width: 100%;
+      width: inherit;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

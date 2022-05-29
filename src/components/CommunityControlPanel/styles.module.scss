@@ -1,0 +1,34 @@
+@import "./mobile/index.module.scss";
+
+.communityControlPanel {
+  display: flex;
+}
+
+.virtualScroll {
+  flex: 1;
+}
+
+.communityList {
+  flex: 1;
+}
+
+.buttonContainer {
+  padding: 8px;
+}
+
+.resetAllChecksButton {
+  &#{&} {
+    margin-left: 12px;
+  }
+}
+
+.title {
+  padding: 8px;
+  font-size: 24px;
+}
+
+@include laptop();
+@include tablet();
+@include mobile768();
+@include mobile640();
+@include mobile480();

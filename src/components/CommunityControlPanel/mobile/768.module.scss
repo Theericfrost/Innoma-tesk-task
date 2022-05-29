@@ -1,0 +1,22 @@
+@mixin mobile768() {
+  @media (max-width: 767px) {
+    .communityControlPanel {
+      flex-direction: column;
+    }
+    .communityList {
+      margin-top: 12px;
+    }
+    .buttonContainer {
+      display: flex;
+      flex-direction: column;
+      .button {
+        &:last-of-type {
+          margin-top: 8px;
+        }
+      }
+      .resetAllChecksButton {
+        margin-left: 0;
+      }
+    }
+  }
+}
